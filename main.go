@@ -71,6 +71,10 @@ func main() {
 		raylib.EndDrawing()
 	}
 
+	for _, entity := range entities {
+		raylib.UnloadModel(entity.Model)
+	}
+
 	raylib.CloseWindow()
 }
 
